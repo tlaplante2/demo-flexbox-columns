@@ -1,0 +1,21 @@
+.container {
+    max-width: 960px; /*for responsive websites*/
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: wrap; /* makes columns wrap under h2*/
+    gap: 2%;  /*adds gap but you must subtract total gap from flex container*/
+}
+
+h2 {
+    flex-basis: 100%; /* makes h2 take up entire row*/
+}
+
+.flex-container > section {
+    flex-basis: calc(96%/3); /* divides columns into thirds*/
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 8px;
+}
